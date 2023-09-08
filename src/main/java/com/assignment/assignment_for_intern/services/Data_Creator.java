@@ -1,57 +1,30 @@
 package com.assignment.assignment_for_intern.services;
 
 public class Data_Creator {
-	 private int id;
-		private String name;
-		
-		 private String job;
-		
-		 private String location;
-	 public Data_Creator(int id, String name, String job, String location) {
+	 private int key;
+	 private String value;
+	public Data_Creator(int key, String value) {
 		super();
-		this.id = id;
-		this.name = name;
-		this.job = job;
-		this.location = location;
+		this.key = key;
+		this.value = value;
 	}
-
+	public int getKey() {
+		return key;
+	}
+	public void setKey(int key) {
+		this.key = key;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
 	@Override
 	public String toString() {
-		return " [id=" + id + ", name=" + name + ", job=" + job + ", location=" + location + "]";
+		return "Data_Creator [key=" + key + ", value=" + value + "]";
 	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getJob() {
-		return job;
-	}
-
-	public void setJob(String job) {
-		this.job = job;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
+	
 
 
 }
